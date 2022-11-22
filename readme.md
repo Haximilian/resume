@@ -1,1 +1,1 @@
-invoke `pdflatex resume.tex` to generate resume.pdf
+invoke `make` to generate a resume
