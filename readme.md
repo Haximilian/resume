@@ -1,1 +1,1 @@
-invoke `make` to generate a resume
+to generate a resume, install [tex](https://www.tug.org/mactex/) invoke `make`
