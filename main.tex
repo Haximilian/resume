@@ -1,0 +1,35 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+% Choose bibliography style for formatting list of publications
+\usepackage[style=ieee,url=false,doi=false,maxbibnames=99,sorting=ydnt,dashed=false]{biblatex}
+\bibliography{papers}
+
+% Choose theme, e.g. black, RedViolet, ForestGreen, MidnightBlue
+\def\theme{RedViolet}
+
+% More predefined colors can be found in 
+% https://en.wikibooks.org/wiki/LaTeX/Colors
+
+\usepackage{simplecv}
+
+\begin{document}
+% Heading
+\headinginline
+{
+    Maximilian Was Damji
+}
+{
+    Email: \email{maximilian.computers@gmail.com} \\
+    Phone: (+1) 604 441 8710 \\
+    GitHub: \github{Haximilian}
+}
+
+\rule{0pt}{1ex}
+
+\import{sections/}{experience.tex}
+\import{sections/}{projects.tex}
+\import{sections/}{education.tex}
+
+\end{document}
+
