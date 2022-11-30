@@ -1,4 +1,7 @@
 *.aux
 *.log
 *.pdf
+*.bcf
+*.out
 .DS_Store
+.vscode
