@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+
+\usepackage[a4paper, margin=1in, top=0.8in]{geometry}      % geometry
+\usepackage{charter}                            % font
+\usepackage{parskip}                            % paragraph indentation
+\usepackage[english]{babel}                     % language
+\usepackage{titlesec}                           % format header
+\usepackage{enumitem}                           % itemize margin
+\usepackage{fontawesome}                        % phone and email icons
+\usepackage{listings}                           % inline code
+\usepackage[dvipsnames]{xcolor}
+\usepackage{hyperref}
+
+\pagestyle{empty}
+\pagenumbering{gobble}
+
+\renewcommand{\rmdefault}{bch}
+
+\newcommand{\headinginline}[2]{
+    \begin{minipage}[t]{0.55\textwidth}
+    \vspace*{\fill}
+    #1
+    \end{minipage}
+    \begin{minipage}[t]{0.45\textwidth}
+    \begin{flushright}
+    \vspace*{\fill}
+    \vspace{8px}
+    #2
+    \end{flushright}
+    \end{minipage}
+}
+
+\newcommand{\github}[1]{\href{https://github.com/#1/}{github.com/#1}}
+\newcommand{\email}[1]{\href{mailto:#1}{#1}}
+\newcommand{\linkedin}[1]{\href{https://www.linkedin.com/in/#1/}{#1}}
+
+\newcommand{\experience}[4]{
+    \begin{tabular*}{1\textwidth}{@{}l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        #3 & #4 \\
+    \end{tabular*} 
+}
+
+\titleformat{\section}{
+    \scshape\raggedright\large}{}{0em}{}[\titlerule\vspace{-\smallskipamount}]
+
+\begin{document}
+
+% \headinginline
+% {
+%     \Huge
+%     \textcolor{RoyalBlue}{Maximilian Waś Damji} \\
+% }
+% {
+%     \faPhone{} 
+%     +1 (604) 441 8710 \\
+%     \faEnvelope{}
+%     \email{maximilian.wasdamji@gmail.com} \\
+%     \faLinkedin{}
+%     \linkedin{maximilian-was-damji}\\
+%     \faGithub{}
+%     \github{haximilian} \\
+% }
+
+\begin{center}
+{
+    \Huge
+    \textcolor{RoyalBlue}{Maximilian Waś Damji} \\
+}
+    \faPhone{}
+    +1 (604) 441 8710 $\cdot$
+    \faEnvelope{}
+    \email{maximilian.wasdamji@gmail.com}
+\end{center}
+
+\input{experience.tex}
+
+\input{projects.tex}
+
+\input{education.tex}
+
+\end{document}
