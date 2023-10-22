@@ -1,41 +1,37 @@
 \section{Experience}
 \experience{\textbf{PayPal}}{Vancouver, Canada}{Software Engineer, Payouts}{Mar 2023 - Present}
-\\
-\textbf{Software}: GraphQL, MySQL, iOS, JMeter, JUnit, JAAS, JPA, EJB, Payara, JSF, CSS, Splunk
-
 \begin{itemize}[leftmargin=*]
     \item {
-        Secured service by requiring all requests to be authenticated and authorised (48 thousand requests/day). Designed and built components to request, issue and verify one-time-access tokens (\href{https://datatracker.ietf.org/doc/html/rfc7519}{RFC 7519}). Conducted load test, wrote unit and integration tests and created dashboard to monitor traffic.
+        Secured \textbf{GraphQL} service against 1 critical vulnerability by implementing authentication component that issues and verifies 48 thousand tokens (\href{https://datatracker.ietf.org/doc/html/rfc7519}{RFC 7519}) per day. Used \textbf{Payara} server, \textbf{HazelCast} queue \& cache, \textbf{MySQL}, \textbf{EclipseLink} and \textbf{EJB} dependency injection.
     }
     \item {
-        Improved user experience by updating the merchant portal frontend.
+        Detected an attack, traffic 64 times more than average by instrumenting authentication component, building \textbf{Splunk} dashboard and alarms that notified team instantly.
     }
     \item {
-        Added features to and found bugs in our \textbf{OAuth2} implementation (\href{https://datatracker.ietf.org/doc/html/rfc6749}{RFC 6749}).
-        % e.g. I added a feature to revoke an application and I found a bug where the server redirects infinitly.
+        Correlated \textbf{iOS} and \textbf{Android} client events with \textbf{Payara} server logs, making it easier to triage bugs and solve customer issues. Achieved this by augmenting logs with unique identifiers.
+    }
+    \item {
+        Sped up authentication latency ($\approx$ 30\%) by making database calls asynchronous and using cache "\href{https://en.wikipedia.org/wiki/Cache_(computing)#Writing_policies}{write back}" strategy rather than "\href{https://en.wikipedia.org/wiki/Cache_(computing)#Writing_policies}{write through}".
     }
 \end{itemize}
 
 \experience{\textbf{Amazon}}{Vancouver, Canada}{Software Engineer, Automated Ads}{Jun 2022 - Mar 2023}
-\\
-\textbf{Software}: Apache Tomcat, Amazon Web Services, Cloud Development Kit, 
-
 \begin{itemize}[leftmargin=*]
     \item {
-        Secured ads alpha-beta testing platform by authenticating and authorising all internal traffic by configuring a reverse-proxy and creating private networks.
+        Secured alpha-beta ads testing platform by configuring an \textbf{Apache Tomcat} reverse-proxy and creating private networks on \textbf{Amazon Web Services} using the \textbf{Cloud Development Kit} to authenticate and authorise all internal traffic.
     }
     \item {
-        Saved 7 days per quarter of manual labour by automating alpha-beta ads testing using Amazon \textbf{Dacia} (\textbf{Event Bridge}), \textbf{SQS} and \textbf{Lambda}, and \textbf{Guice}. Wrote unit and integration tests.
+        Saved 7 days per quarter ($\approx$ 10\%) of developer labour by automating alpha-beta ads testing using Amazon \textbf{Event Bridge}, \textbf{SQS}, \textbf{Lambda}, and Google \textbf{Guice} dependency injection. Wrote unit and integration tests.
     }
     \item {
-        Reduced severity-2 tickets by eliminating “ec2 is out of capacity” error for \textbf{Spark} clusters by adding \textbf{PMET} (\textbf{CloudWatch}) alarms on the number of instances in an availability zone.
+        Reduced severity-2 tickets ($\approx$ 10\%) by eliminating “ec2 is out of capacity” error for \textbf{Spark} clusters using \textbf{CloudWatch} alarms on the number of instances in an availability zone.
     }
 \end{itemize}
 
 \experience{\textbf{Visier}}{Vancouver, Canada}{Software Engineer Intern, Build Systems}{May 2021 - Dec 2021}
 \begin{itemize}[leftmargin=*]
     \item {
-        Implemented \textbf{Gradle} telemetry plugin to monitor task adoption, execution time, and exception frequency. Designed plugin to be fault-tolerant, efficient, and respectful of privacy.
+        Monitored \textbf{Gradle} task adoption, execution time, and exception frequency by implementing telemetry plugin. Designed plugin to be fault-tolerant, efficient, and respectful of privacy.
     }
     \item {
         Configured \textbf{Consul} and \textbf{Docker} to allow containerized services to discover each other.
